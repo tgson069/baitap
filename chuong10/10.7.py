@@ -1,0 +1,8 @@
+a=str(input("nhap chuoi "))
+b=str(input("nhap chuoi con s_sub"))
+c=str(input("nhap chuoi con s_find"))
+d=str(input("nhap chuoi con s_replace"))
+e=int(len(a))
+print(str.strip(a))
+print("so lan s_sub xuat hien",a.count(b,int(0),int(e)))
+print(a.replace(c,d))
