@@ -55,8 +55,8 @@ tu.seek(0)
 tu.truncate(0)
 for i in tudien:
     new=tudien[i]
-    new=phay+new
-    i=phay+i
+    new=new+phay
+    i=i+phay
     tu.write(i)
     tu.write(new)
 tu.closed
