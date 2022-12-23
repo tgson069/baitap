@@ -1,6 +1,6 @@
 import os
 path=""
-lsthoadon={}
+lsthoadon=[]
 hoadon=open("hoadon.txt","r+",encoding="utf-8") 
 def themhoadon(lsthoadon):
     while True:
@@ -18,7 +18,13 @@ def themhoadon(lsthoadon):
         tt=input("tiep tuc hay khong ")
         if tt!=1:
             break
-themhoadon(lsthoadon)
-
+        return
+themhoadon(lsthoadon)        
+def inhoadon(lsthoadon):
+    print('{:12}{:12}{:20}{:18}{:20}{:15}{:>20}{:>20}{:>20}'.format("sohd","ngayhd","hoten","diachi","quan","sodienthoai","tongtien","tamung","conlai"))
+    for i in lsthoadon:
+        print('{:12}{:12}{:20}{:18}{:20}{:15}{:>20}{:>20}{:>20}'.format(i["sohd"],i["ngayhd"],i["hoten"],i["diachi"],i["quan"],i["sodienthoai"],i["tong tien"],i["tam ung"],i["conlai"]))
+    return
+inhoadon(lsthoadon)
 
 
